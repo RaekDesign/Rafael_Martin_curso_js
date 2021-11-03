@@ -1,4 +1,4 @@
-const NOMBRE = prompt("Ingresá tu Nombre");
+/*const NOMBRE = prompt("Ingresá tu Nombre");
 const MENSAJE = "Hola " + NOMBRE + " Bienvenido a tu Presupuesto Personal";
 alert(MENSAJE);
 console.log(MENSAJE);
@@ -27,8 +27,38 @@ const SI = 500;
 const NO = 100;
 
 console.log("$" + valorhora * JUNIOR + educacionExtra + SI);
-console.log("$" + valorhora * JUNIOR + educacionExtra + NO)
+console.log("$" + valorhora * JUNIOR + educacionExtra + NO)*/
 
+
+const NOMBRE = ['Juan','Carlos','Victor']; 
+
+for (const index in NOMBRE){
+console.log(NOMBRE [index]);
+}
+
+for(let x = 0; x < 10; x++) {
+    if (x == 6){
+        continue;
+    }
+    console.log(x);
+}
+
+
+let nivelExperiencia = prompt("Ingresá nivel de experiencia junior, semi senior o senior");
+while(nivelExperiencia != "ESC" ){
+    switch (nivelExperiencia) {
+        case "junior":
+            alert("Nivel de experiencia Junior");
+            break;
+        case "semi senior":
+            alert("Nivel de experiencia semi senior");
+            break;
+        case "senior":
+            alert("Nivel de experiencia senior")
+            break;
+    }
+    nivelExperiencia = prompt ("Ingresá nivel de experiencia junior, semi senior o senior");
+}
 
 
 
