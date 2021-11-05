@@ -1,0 +1,58 @@
+
+const NOMBRE = prompt("Ingresá tu Nombre");
+const MENSAJE = "Hola " + NOMBRE + " Bienvenido a tu Presupuesto Personal";
+alert(MENSAJE);
+console.log(MENSAJE);
+
+function sumar(VALORHORA,nivelExperiencia,JUNIOR) {
+    const resultado = VALORHORA + nivelExperiencia +JUNIOR;
+    return resultado; 
+}
+function sumar(VALORHORA,nivelExperiencia,SEMISENIOR) {
+    const resultado = VALORHORA + nivelExperiencia +SEMISENIOR;
+    return resultado;  
+}
+function sumar(VALORHORA,nivelExperiencia,SENIOR) {
+    const resultado = VALORHORA + nivelExperiencia +SENIOR;
+    return resultado;  
+}
+
+let nivelExperiencia = Number (prompt (`Ingresá nivel de experiencia (junior, semi senior o senior
+1 - junior
+2 - semi senior 
+3 - senior`));
+
+const JUNIOR = 100;
+const SEMISENIOR = 200;
+const SENIOR = 300;
+const VALORHORA = Number (prompt("Ingresá el valor de tu hora de trabajo"));
+
+switch (nivelExperiencia){
+    case 1:
+        const SUMAJUNIOR = sumar(VALORHORA,nivelExperiencia,JUNIOR);
+        console.log (`El resultado ${VALORHORA} + ${nivelExperiencia} + ${JUNIOR} es ${SUMAJUNIOR}`);
+        alert(`El resultado es ${SUMAJUNIOR}`);
+        break;
+    case 2:
+        const SUMASEMISENIOR = sumar(VALORHORA,nivelExperiencia,SEMISENIOR);
+        console.log (`El resultado ${VALORHORA} + ${nivelExperiencia} + ${SEMISENIOR} es ${SUMASEMISENIOR}`);
+        alert(SUMASEMISENIOR);
+        break;
+    case 3:
+        const SUMASENIOR = sumar(VALORHORA,nivelExperiencia,SENIOR);
+        console.log (`El resultado ${VALORHORA} + ${nivelExperiencia} + ${SENIOR} es ${SUMASENIOR}`);
+        alert(SUMASENIOR);
+        break;
+    default:
+        break;
+}
+
+let equipo = Number(prompt("¿cuantas con computadora propia si o no?"));
+
+const SI = 0.21;
+const NO = 0.51;
+const IVASI = 500;
+const IVANO = 5000;
+const multiplicar = function (a,b) { return a * b};
+console.log(`El valor que debes sumarle a tu hora de trabajo es de ${SI} * ${IVASI}`);
+console.log(`El valor que debes sumarle a tu hora de trabajo es de ${NO} * ${IVANO}`);
