@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<script src="js/script.js"></script>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <script src="js/script5.js"></script>
+    <body>
+        <form> 
+            Nombre: <input type="text" id="nombre"/>
+            <br> 
+            ¿nivel de experiencia?
+            Más de 5 años <input type="radio" id="5+" name= "experiencia" value="MAS"/>
+            Menos de 5 años <input type="radio" id="5-" name= "experiencia" value="Menos"/>
+            <br>
+            Brindas factura A. <input type="checkbox" id="factura" value="SI"/>
+            <br>
+            <button type="button" onclick="valida()"> Validar </button>
+            <button type="button" onclick="borrar()"> Borrar </button>
+        </form> 
+        <!-- Inicio Header -->
+            <header>
+            <div class="container">
+                <div class="Top">
+                        <div class="Logo">
+                        <ul>
+                                <li><img src="#" alt="logo"></li>
+                        </ul>
+                        </div>
+                        <div class="redesSociales">
+                        <ul>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Whatsapp</a></li>
+                        </ul>    
+                        </div> 
+                </div>        
+            </div>       
+            </header>
+        <!-- Fin Header -->
+        
+        <!-- Inicio Nav -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><div class="subnav">
+                        <button class="subnavbtn">Servicios<i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                            <a href="#servicios.html">Branding</a>
+                            <a href="#servicios.html">UX UI</a>
+                            <a href="#servicios.html">Contenido</a>
+                        </div>
+                        </div></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>    
+            </nav>
+        <!-- Fin Nav -->
+        
+        <!-- Inicio Contenido Home -->    
+        <section id="contenidoHome">
+            <div class="container"> 
+                <h1>Home</h1>         
+                <div class="cuerpoTextos1">
+                    <h2 class="cuerpoTextos1Titulos">Acerca de Noostros</h2>
+                        <p name="textoPrueba">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="cuerpoTextos2">
+                    <h2 class="cuerpoTextos2Titulos">Visión</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="cuerpoTextos3">
+                    <h2 class="cuerpoTextos3Titulos">Misión</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+            </div>  
+            </section>
+        <!-- Fin Contenido Home -->
+        <!-- Inicio Footer -->
+            <footer>
+            <div class="container">
+                <p><strong>Todos los derechos reservados</strong></p>
+            </div>
+            </footer>
+        <!-- Fin Footer -->
+    </body>
 </html>
